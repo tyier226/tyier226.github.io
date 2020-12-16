@@ -1,4 +1,12 @@
-/* Comment line*/
+/* Comment line
+you can set styles of margin border or padding and change anything about 
+the three models and anything of the top left right or bottom individually. Like color width style shape.
+margin: 0; removes all margins or sets margin value on all sides to 0 You can use margin: 0 auto; to align 
+center or other combinators to align text in any fashion.
+border: 
+padding: top right bottom left or could just a flat value for all 4
+
+*/
 #Nameheading {
   font-size: 60px;
   color: green;
