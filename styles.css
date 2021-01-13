@@ -15,8 +15,6 @@ padding: top right bottom left or could just a flat value for all 4
 body {
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   background: #daffef;
-  margin: 0;
-  padding: 0;
 }
 
 .background {
@@ -37,8 +35,6 @@ body {
 
 .navbar > .size-nav {
   list-style-type: none;
-  padding: 0;
-  margin: 0;
 }
 
 .nav-item {
@@ -111,9 +107,13 @@ body {
 .nav-item > .site-name {
   text-decoration: none;
   padding: 1em;
-  font-size: 2em;
+  font-size: 2.2885em;
   color: whitesmoke;
-  padding-left: 2.7em;
+}
+
+.nav-item > .site-name:hover {
+  background-color: whitesmoke;
+  color: black;
 }
 
 .nav-item:last-child > .navlink i {
