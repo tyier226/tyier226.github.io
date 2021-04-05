@@ -1,70 +1,308 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Tyler Yarington's: Home Page</title>
-  <script src="https://kit.fontawesome.com/8f552029e1.js" crossorigin="anonymous"></script>
-  <link rel="stylesheet" href="styles.css" />
+  <title>Tyler Yarington's Website</title>
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Arizonia&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+    body,
+    html {
+      height: 100%;
+      margin: 0;
+      border: 0;
+      padding: 0;
+      font: 400 15px/1.8 "Lato", sans-serif;
+      background-color: wheat;
+    }
+
+    .background {
+      position: relative;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-image: url("Background.jpg");
+      height: 100%;
+    }
+
+    .caption {
+      position: absolute;
+      left: 0;
+      top: 42%;
+      width: 100%;
+      text-align: center;
+    }
+
+    .caption span.bgInsert {
+      background-color: #FFFFF0;
+      opacity: .65;
+      padding: 13.5px;
+      font-size: 50px;
+      letter-spacing: 10px;
+      font-family: 'Arizonia', cursive;
+    }
+
+    .element {
+      text-align: center;
+      margin-left: 200px;
+      margin-right: 200px;
+      padding-top: 20px;
+    }
+
+    #About_me{
+      background-color: blanchedalmond;
+    }
+
+    #Contact_me{
+      margin:0;
+      border: 50px;
+      border-bottom: 200px;
+      background-color: rgb(126, 146, 131);
+      color: blanchedalmond;
+    }
+
+    h2{
+      margin: 0;
+    }
+
+    .sidenav {
+      width: 150px;
+      position: fixed;
+      z-index: 1;
+      top: 20px;
+      left: 10px;
+      background: #eee;
+      overflow-x: hidden;
+      padding: 7px 0;
+    }
+
+    .sidenav a {
+      text-align: center;
+      /* padding: top right bottom left OR padding: top right&left bottom OR padding: top&bottom right&left OR padding: allfour*/
+      padding: 5px 10px 4px 10px;
+      text-decoration: none;
+      font-size: 25px;
+      color: #2196F3;
+      display: block;
+    }
+
+    .sidenav a:hover {
+      color: #170ec7;
+    }
+
+
+  </style>
 </head>
 
 <body>
-  <!--id is unique class is used for multiple headings
-    Block takes full width and always starts a new line
-    Inline does not start a new line and only takes up as much space as is needed
-    examples of both can easily be found online
-    -->
-  <div class="container">
-    <img class="background" alt="Error: Image not displayed" src="Background.jpg">
-    <nav class="navbar" id="navID">
-      <button type="button" onclick="myFnc(this)" class="toggle-collapse" id="toggle-button">
-        <span class="toggle-icon"></span>
-      </button>
-
-      <ul class="side-nav">
-        <li class="nav-item">
-          <a href="index.html" class="site-name">Home Page</a>
-        </li>
-        <li class="nav-item">
-          <a href="biography.html" class="nav-link">Biography</a>
-        </li>
-        <li class="nav-item">
-          <a href="skills.html" class="nav-link">Skills</a>
-        </li>
-        <li class="nav-item">
-          <a href="projects.html" class="nav-link">Projects</a>
-        </li>
-        <li class="nav-item">
-          <a href="workhistory.html" class="nav-link">Work History</a>
-        </li>
-        <li class="nav-item">
-          <a href="contact.html" class="nav-link">Contact Me</a>
-        </li>
-        <li class="nav-item">
-        </li>
-      </ul>
-    </nav>
+  <div class="sidenav">
+    <a href="#Home">Home</a>
+    <a href="#About_me">Intro</a>
+    <a href="#Skills">Skills</a>
+    <a href="#Projects">Projects</a>
+    <a href="#Career">Career</a>
+    <a href="#Contact_me">Contact</a>
+  </div>
+  <div id="Home" class="background">
+    <div class="caption">
+      <span class="bgInsert">Hello, Welcome to my website</span><br>
+      <span class="bgInsert">-Tyler Yarington</span>
+    </div>
+  </div>
+  <div id="About_me" class ="element">
+    <h2> About me </h2>
+    <p> She tried not to judge him. His ratty clothes and unkempt hair made him look homeless. Was he really the next Einstein as she had been told? On the off chance it was true, she continued to try not to judge him. He couldn't move. His head throbbed and spun. He couldn't decide if it was the flu or the drinking last night. It was probably a combination of both. There was little doubt that the bridge was unsafe. All one had to do was look at it to know that with certainty. Yet Bob didn't see another option. He may have been able to work one out if he had a bit of time to think things through, but time was something he didn't have. A choice needed to be made, and it needed to be made quickly.</p>
+    <p> She tried not to judge him. His ratty clothes and unkempt hair made him look homeless. Was he really the next
+      Einstein as she had been told? On the off chance it was true, she continued to try not to judge him. He couldn't move.
+      His head throbbed and spun. He couldn't decide if it was the flu or the drinking last night. It was probably a
+      combination of both. There was little doubt that the bridge was unsafe. All one had to do was look at it to know that
+      with certainty. Yet Bob didn't see another option. He may have been able to work one out if he had a bit of time to
+      think things through, but time was something he didn't have. A choice needed to be made, and it needed to be made
+      quickly.</p>
+      <p> She tried not to judge him. His ratty clothes and unkempt hair made him look homeless. Was he really the next
+        Einstein as she had been told? On the off chance it was true, she continued to try not to judge him. He couldn't move.
+        His head throbbed and spun. He couldn't decide if it was the flu or the drinking last night. It was probably a
+        combination of both. There was little doubt that the bridge was unsafe. All one had to do was look at it to know that
+        with certainty. Yet Bob didn't see another option. He may have been able to work one out if he had a bit of time to
+        think things through, but time was something he didn't have. A choice needed to be made, and it needed to be made
+        quickly.</p>
+        <p> She tried not to judge him. His ratty clothes and unkempt hair made him look homeless. Was he really the next
+          Einstein as she had been told? On the off chance it was true, she continued to try not to judge him. He couldn't move.
+          His head throbbed and spun. He couldn't decide if it was the flu or the drinking last night. It was probably a
+          combination of both. There was little doubt that the bridge was unsafe. All one had to do was look at it to know that
+          with certainty. Yet Bob didn't see another option. He may have been able to work one out if he had a bit of time to
+          think things through, but time was something he didn't have. A choice needed to be made, and it needed to be made
+          quickly.</p>
+          <p> She tried not to judge him. His ratty clothes and unkempt hair made him look homeless. Was he really the next
+            Einstein as she had been told? On the off chance it was true, she continued to try not to judge him. He couldn't move.
+            His head throbbed and spun. He couldn't decide if it was the flu or the drinking last night. It was probably a
+            combination of both. There was little doubt that the bridge was unsafe. All one had to do was look at it to know that
+            with certainty. Yet Bob didn't see another option. He may have been able to work one out if he had a bit of time to
+            think things through, but time was something he didn't have. A choice needed to be made, and it needed to be made
+            quickly.</p>
   </div>
 
-  
-  <script>
-    function myFnc(e) {
-      e.classList.toggle("show");
+  <div id="Skills" class="element">
+    <h2> Skills </h2>
+    <p> It's not his fault. I know you're going to want to, but you can't blame him. He really has no idea how it happened. I kept trying to come up with excuses I could say to mom that would keep her calm when she found out what happened, but the more I tried, the more I could see none of them would work. He was going to get her wrath and there was nothing I could say to prevent it. It was going to rain. The weather forecast didn't say that, but the steel plate in his hip did. He had learned over the years to trust his hip over the weatherman. It was going to rain, so he better get outside and prepare. Dave watched as the forest burned up on the hill, only a few miles from her house. The car had been hastily packed and Marta was inside trying to round up the last of the pets. Dave went through his mental list of the most important papers and documents that they couldn't leave behind. He scolded himself for not having prepared these better in advance and  hoped that he had remembered everything that was needed. He continued to wait for Marta to appear with the pets, but she still was nowhere to be seen. The cab arrived late. The inside was in as bad of shape as the outside which was concerning, and it didn't appear that it had been cleaned in months. The green tree air-freshener hanging from the rearview mirror was either exhausted of its scent or not strong enough to overcome the other odors emitting from the cab. The correct decision, in this case, was to get the hell out of it and to call another cab, but she was late and didn't have a choice. </p>
+    <p> She tried not to judge him. His ratty clothes and unkempt hair made him look homeless. Was he really the next
+      Einstein as she had been told? On the off chance it was true, she continued to try not to judge him. He couldn't move.
+      His head throbbed and spun. He couldn't decide if it was the flu or the drinking last night. It was probably a
+      combination of both. There was little doubt that the bridge was unsafe. All one had to do was look at it to know that
+      with certainty. Yet Bob didn't see another option. He may have been able to work one out if he had a bit of time to
+      think things through, but time was something he didn't have. A choice needed to be made, and it needed to be made
+      quickly.</p>
+      <p> She tried not to judge him. His ratty clothes and unkempt hair made him look homeless. Was he really the next
+        Einstein as she had been told? On the off chance it was true, she continued to try not to judge him. He couldn't move.
+        His head throbbed and spun. He couldn't decide if it was the flu or the drinking last night. It was probably a
+        combination of both. There was little doubt that the bridge was unsafe. All one had to do was look at it to know that
+        with certainty. Yet Bob didn't see another option. He may have been able to work one out if he had a bit of time to
+        think things through, but time was something he didn't have. A choice needed to be made, and it needed to be made
+        quickly.</p>
+        <p> She tried not to judge him. His ratty clothes and unkempt hair made him look homeless. Was he really the next
+          Einstein as she had been told? On the off chance it was true, she continued to try not to judge him. He couldn't move.
+          His head throbbed and spun. He couldn't decide if it was the flu or the drinking last night. It was probably a
+          combination of both. There was little doubt that the bridge was unsafe. All one had to do was look at it to know that
+          with certainty. Yet Bob didn't see another option. He may have been able to work one out if he had a bit of time to
+          think things through, but time was something he didn't have. A choice needed to be made, and it needed to be made
+          quickly.</p>
+          <p> She tried not to judge him. His ratty clothes and unkempt hair made him look homeless. Was he really the next
+            Einstein as she had been told? On the off chance it was true, she continued to try not to judge him. He couldn't move.
+            His head throbbed and spun. He couldn't decide if it was the flu or the drinking last night. It was probably a
+            combination of both. There was little doubt that the bridge was unsafe. All one had to do was look at it to know that
+            with certainty. Yet Bob didn't see another option. He may have been able to work one out if he had a bit of time to
+            think things through, but time was something he didn't have. A choice needed to be made, and it needed to be made
+            quickly.</p><p> She tried not to judge him. His ratty clothes and unkempt hair made him look homeless. Was he really the next
+              Einstein as she had been told? On the off chance it was true, she continued to try not to judge him. He couldn't move.
+              His head throbbed and spun. He couldn't decide if it was the flu or the drinking last night. It was probably a
+              combination of both. There was little doubt that the bridge was unsafe. All one had to do was look at it to know that
+              with certainty. Yet Bob didn't see another option. He may have been able to work one out if he had a bit of time to
+              think things through, but time was something he didn't have. A choice needed to be made, and it needed to be made
+              quickly.</p><p> She tried not to judge him. His ratty clothes and unkempt hair made him look homeless. Was he really the next
+                Einstein as she had been told? On the off chance it was true, she continued to try not to judge him. He couldn't move.
+                His head throbbed and spun. He couldn't decide if it was the flu or the drinking last night. It was probably a
+                combination of both. There was little doubt that the bridge was unsafe. All one had to do was look at it to know that
+                with certainty. Yet Bob didn't see another option. He may have been able to work one out if he had a bit of time to
+                think things through, but time was something he didn't have. A choice needed to be made, and it needed to be made
+                quickly.</p><p> She tried not to judge him. His ratty clothes and unkempt hair made him look homeless. Was he really the next
+                  Einstein as she had been told? On the off chance it was true, she continued to try not to judge him. He couldn't move.
+                  His head throbbed and spun. He couldn't decide if it was the flu or the drinking last night. It was probably a
+                  combination of both. There was little doubt that the bridge was unsafe. All one had to do was look at it to know that
+                  with certainty. Yet Bob didn't see another option. He may have been able to work one out if he had a bit of time to
+                  think things through, but time was something he didn't have. A choice needed to be made, and it needed to be made
+                  quickly.</p><p> She tried not to judge him. His ratty clothes and unkempt hair made him look homeless. Was he really the next
+                    Einstein as she had been told? On the off chance it was true, she continued to try not to judge him. He couldn't move.
+                    His head throbbed and spun. He couldn't decide if it was the flu or the drinking last night. It was probably a
+                    combination of both. There was little doubt that the bridge was unsafe. All one had to do was look at it to know that
+                    with certainty. Yet Bob didn't see another option. He may have been able to work one out if he had a bit of time to
+                    think things through, but time was something he didn't have. A choice needed to be made, and it needed to be made
+                    quickly.</p><p> She tried not to judge him. His ratty clothes and unkempt hair made him look homeless. Was he really the next
+                      Einstein as she had been told? On the off chance it was true, she continued to try not to judge him. He couldn't move.
+                      His head throbbed and spun. He couldn't decide if it was the flu or the drinking last night. It was probably a
+                      combination of both. There was little doubt that the bridge was unsafe. All one had to do was look at it to know that
+                      with certainty. Yet Bob didn't see another option. He may have been able to work one out if he had a bit of time to
+                      think things through, but time was something he didn't have. A choice needed to be made, and it needed to be made
+                      quickly.</p>
+  </div>
 
-      var elem = document.getElementById("navID")
-      Style = window.getComputedStyle(elem),
-        right = Style.getPropertyValue("right");
+  <div id="Projects" class="element">
+    <h2> Projects </h2>
+    <p> It's not his fault. I know you're going to want to, but you can't blame him. He really has no idea how it happened. I kept trying to come up with excuses I could say to mom that would keep her calm when she found out what happened, but the more I tried, the more I could see none of them would work. He was going to get her wrath and there was nothing I could say to prevent it. It was going to rain. The weather forecast didn't say that, but the steel plate in his hip did. He had learned over the years to trust his hip over the weatherman. It was going to rain, so he better get outside and prepare. Dave watched as the forest burned up on the hill, only a few miles from her house. The car had been hastily packed and Marta was inside trying to round up the last of the pets. Dave went through his mental list of the most important papers and documents that they couldn't leave behind. He scolded himself for not having prepared these better in advance and hoped that he had remembered everything that was needed. He continued to wait for Marta to appear with the pets, but she still was nowhere to be seen. The cab arrived late. The inside was in as bad of shape as the outside which was concerning, and it didn't appear that it had been cleaned in months. The green tree air-freshener hanging from the rearview mirror was either exhausted of its scent or not strong enough to overcome the other odors emitting from the cab. The correct decision, in this case, was to get the hell out of it and to call another cab, but she was late and didn't have a choice. </p><p> She tried not to judge him. His ratty clothes and unkempt hair made him look homeless. Was he really the next
+      Einstein as she had been told? On the off chance it was true, she continued to try not to judge him. He couldn't move.
+      His head throbbed and spun. He couldn't decide if it was the flu or the drinking last night. It was probably a
+      combination of both. There was little doubt that the bridge was unsafe. All one had to do was look at it to know that
+      with certainty. Yet Bob didn't see another option. He may have been able to work one out if he had a bit of time to
+      think things through, but time was something he didn't have. A choice needed to be made, and it needed to be made
+      quickly.</p><p> She tried not to judge him. His ratty clothes and unkempt hair made him look homeless. Was he really the next
+        Einstein as she had been told? On the off chance it was true, she continued to try not to judge him. He couldn't move.
+        His head throbbed and spun. He couldn't decide if it was the flu or the drinking last night. It was probably a
+        combination of both. There was little doubt that the bridge was unsafe. All one had to do was look at it to know that
+        with certainty. Yet Bob didn't see another option. He may have been able to work one out if he had a bit of time to
+        think things through, but time was something he didn't have. A choice needed to be made, and it needed to be made
+        quickly.</p><p> She tried not to judge him. His ratty clothes and unkempt hair made him look homeless. Was he really the next
+          Einstein as she had been told? On the off chance it was true, she continued to try not to judge him. He couldn't move.
+          His head throbbed and spun. He couldn't decide if it was the flu or the drinking last night. It was probably a
+          combination of both. There was little doubt that the bridge was unsafe. All one had to do was look at it to know that
+          with certainty. Yet Bob didn't see another option. He may have been able to work one out if he had a bit of time to
+          think things through, but time was something he didn't have. A choice needed to be made, and it needed to be made
+          quickly.</p><p> She tried not to judge him. His ratty clothes and unkempt hair made him look homeless. Was he really the next
+            Einstein as she had been told? On the off chance it was true, she continued to try not to judge him. He couldn't move.
+            His head throbbed and spun. He couldn't decide if it was the flu or the drinking last night. It was probably a
+            combination of both. There was little doubt that the bridge was unsafe. All one had to do was look at it to know that
+            with certainty. Yet Bob didn't see another option. He may have been able to work one out if he had a bit of time to
+            think things through, but time was something he didn't have. A choice needed to be made, and it needed to be made
+            quickly.</p><p> She tried not to judge him. His ratty clothes and unkempt hair made him look homeless. Was he really the next
+              Einstein as she had been told? On the off chance it was true, she continued to try not to judge him. He couldn't move.
+              His head throbbed and spun. He couldn't decide if it was the flu or the drinking last night. It was probably a
+              combination of both. There was little doubt that the bridge was unsafe. All one had to do was look at it to know that
+              with certainty. Yet Bob didn't see another option. He may have been able to work one out if he had a bit of time to
+              think things through, but time was something he didn't have. A choice needed to be made, and it needed to be made
+              quickly.</p><p> She tried not to judge him. His ratty clothes and unkempt hair made him look homeless. Was he really the next
+                Einstein as she had been told? On the off chance it was true, she continued to try not to judge him. He couldn't move.
+                His head throbbed and spun. He couldn't decide if it was the flu or the drinking last night. It was probably a
+                combination of both. There was little doubt that the bridge was unsafe. All one had to do was look at it to know that
+                with certainty. Yet Bob didn't see another option. He may have been able to work one out if he had a bit of time to
+                think things through, but time was something he didn't have. A choice needed to be made, and it needed to be made
+                quickly.</p>
+  </div>
 
-      if (right == "0px") {
-        elem.style.right = "-260px";
-      } else {
-        elem.style.right = "0px";
-      }
-    }
+  <div id="Career" class="element">
+    <h2> #Career </h2>
+    <p> It's not his fault. I know you're going to want to, but you can't blame him. He really has no idea how it happened. I kept trying to come up with excuses I could say to mom that would keep her calm when she found out what happened, but the more I tried, the more I could see none of them would work. He was going to get her wrath and there was nothing I could say to prevent it. It was going to rain. The weather forecast didn't say that, but the steel plate in his hip did. He had learned over the years to trust his hip over the weatherman. It was going to rain, so he better get outside and prepare. Dave watched as the forest burned up on the hill, only a few miles from her house. The car had been hastily packed and Marta was inside trying to round up the last of the pets. Dave went through his mental list of the most important papers and documents that they couldn't leave behind. He scolded himself for not having prepared these better in advance and hoped that he had remembered everything that was needed. He continued to wait for Marta to appear with the pets, but she still was nowhere to be seen. The cab arrived late. The inside was in as bad of shape as the outside which was concerning, and it didn't appear that it had been cleaned in months. The green tree air-freshener hanging from the rearview mirror was either exhausted of its scent or not strong enough to overcome the other odors emitting from the cab. The correct decision, in this case, was to get the hell out of it and to call another cab, but she was late and didn't have a choice. </p><p> She tried not to judge him. His ratty clothes and unkempt hair made him look homeless. Was he really the next
+      Einstein as she had been told? On the off chance it was true, she continued to try not to judge him. He couldn't move.
+      His head throbbed and spun. He couldn't decide if it was the flu or the drinking last night. It was probably a
+      combination of both. There was little doubt that the bridge was unsafe. All one had to do was look at it to know that
+      with certainty. Yet Bob didn't see another option. He may have been able to work one out if he had a bit of time to
+      think things through, but time was something he didn't have. A choice needed to be made, and it needed to be made
+      quickly.</p><p> She tried not to judge him. His ratty clothes and unkempt hair made him look homeless. Was he really the next
+        Einstein as she had been told? On the off chance it was true, she continued to try not to judge him. He couldn't move.
+        His head throbbed and spun. He couldn't decide if it was the flu or the drinking last night. It was probably a
+        combination of both. There was little doubt that the bridge was unsafe. All one had to do was look at it to know that
+        with certainty. Yet Bob didn't see another option. He may have been able to work one out if he had a bit of time to
+        think things through, but time was something he didn't have. A choice needed to be made, and it needed to be made
+        quickly.</p><p> She tried not to judge him. His ratty clothes and unkempt hair made him look homeless. Was he really the next
+          Einstein as she had been told? On the off chance it was true, she continued to try not to judge him. He couldn't move.
+          His head throbbed and spun. He couldn't decide if it was the flu or the drinking last night. It was probably a
+          combination of both. There was little doubt that the bridge was unsafe. All one had to do was look at it to know that
+          with certainty. Yet Bob didn't see another option. He may have been able to work one out if he had a bit of time to
+          think things through, but time was something he didn't have. A choice needed to be made, and it needed to be made
+          quickly.</p><p> She tried not to judge him. His ratty clothes and unkempt hair made him look homeless. Was he really the next
+            Einstein as she had been told? On the off chance it was true, she continued to try not to judge him. He couldn't move.
+            His head throbbed and spun. He couldn't decide if it was the flu or the drinking last night. It was probably a
+            combination of both. There was little doubt that the bridge was unsafe. All one had to do was look at it to know that
+            with certainty. Yet Bob didn't see another option. He may have been able to work one out if he had a bit of time to
+            think things through, but time was something he didn't have. A choice needed to be made, and it needed to be made
+            quickly.</p><p> She tried not to judge him. His ratty clothes and unkempt hair made him look homeless. Was he really the next
+              Einstein as she had been told? On the off chance it was true, she continued to try not to judge him. He couldn't move.
+              His head throbbed and spun. He couldn't decide if it was the flu or the drinking last night. It was probably a
+              combination of both. There was little doubt that the bridge was unsafe. All one had to do was look at it to know that
+              with certainty. Yet Bob didn't see another option. He may have been able to work one out if he had a bit of time to
+              think things through, but time was something he didn't have. A choice needed to be made, and it needed to be made
+              quickly.</p><p> She tried not to judge him. His ratty clothes and unkempt hair made him look homeless. Was he really the next Einstein as she had been told? On the off chance it was true, she continued to try not to judge him. He couldn't move. His head throbbed and spun. He couldn't decide if it was the flu or the drinking last night. It was probably a combination of both. There was little doubt that the bridge was unsafe. All one had to do was look at it to know that with certainty. Yet Bob didn't see another option. He may have been able to work one out if he had a bit of time to think things through, but time was something he didn't have. A choice needed to be made, and it needed to be made quickly.</p><p> She tried not to judge him. His ratty clothes and unkempt hair made him look homeless. Was he really the next
+                Einstein as she had been told? On the off chance it was true, she continued to try not to judge him. He couldn't move.
+                His head throbbed and spun. He couldn't decide if it was the flu or the drinking last night. It was probably a
+                combination of both. There was little doubt that the bridge was unsafe. All one had to do was look at it to know that
+                with certainty. Yet Bob didn't see another option. He may have been able to work one out if he had a bit of time to
+                think things through, but time was something he didn't have. A choice needed to be made, and it needed to be made
+                quickly.</p><p> She tried not to judge him. His ratty clothes and unkempt hair made him look homeless. Was he really the next Einstein as she had been told? On the off chance it was true, she continued to try not to judge him. He couldn't move. His head throbbed and spun. He couldn't decide if it was the flu or the drinking last night. It was probably a combination of both. There was little doubt that the bridge was unsafe. All one had to do was look at it to know that with certainty. Yet Bob didn't see another option. He may have been able to work one out if he had a bit of time to think things through, but time was something he didn't have. A choice needed to be made, and it needed to be made quickly.</p><p> She tried not to judge him. His ratty clothes and unkempt hair made him look homeless. Was he really the next
+                  Einstein as she had been told? On the off chance it was true, she continued to try not to judge him. He couldn't move.
+                  His head throbbed and spun. He couldn't decide if it was the flu or the drinking last night. It was probably a
+                  combination of both. There was little doubt that the bridge was unsafe. All one had to do was look at it to know that
+                  with certainty. Yet Bob didn't see another option. He may have been able to work one out if he had a bit of time to
+                  think things through, but time was something he didn't have. A choice needed to be made, and it needed to be made
+                  quickly.</p>
+  </div>
 
-  </script>
+  <div id="Contact_me" class="element">
+    <h2> Contact me </h2>
+    <p> If you have any questions, or would like to see some of my projects code you can email me. </p> tyier226@hotmail.com <br> Also, check out my linkedin page!
+    
+    <a href="https://www.linkedin.com/in/tyler-yarington-56a30a159/">
+      <span class="">
+      </span>My Linkedin</a>
+  </div>
 </body>
 
 </html>
